@@ -42,18 +42,11 @@ export default function Footer() {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/dung-nguyen-quang-994a77268/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 LinkedIn
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
               </a>
             </div>
           </div>

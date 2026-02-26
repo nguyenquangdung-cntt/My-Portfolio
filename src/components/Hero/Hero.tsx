@@ -6,11 +6,9 @@ export default function Hero() {
       <div className="container mx-auto px-4">
         <div className={styles.content}>
           <h1 className={styles.title}>
-            Hello, I'm <span className={styles.highlight}>Your Name</span>
+            Hello, I'm <span className={styles.highlight}>DUNG NGUYEN</span>
           </h1>
-          <p className={styles.subtitle}>
-            Full Stack Developer & UI/UX Enthusiast
-          </p>
+          <p className={styles.subtitle}>Fron end Developer</p>
           <p className={styles.description}>
             I create beautiful and functional web experiences that help
             businesses grow and users succeed.
@@ -35,20 +33,12 @@ export default function Hero() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/dung-nguyen-quang-994a77268/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
               LinkedIn
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-            >
-              Twitter
             </a>
           </div>
         </div>

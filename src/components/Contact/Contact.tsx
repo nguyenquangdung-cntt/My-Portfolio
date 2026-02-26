@@ -50,8 +50,8 @@ export default function Contact() {
                 <span className={styles.icon}>📧</span>
                 <div>
                   <h4>Email</h4>
-                  <a href="mailto:your.email@example.com">
-                    your.email@example.com
+                  <a href="mailto:nguyenquangdung2309@gmail.com">
+                    nguyenquangdung2309@gmail.com
                   </a>
                 </div>
               </div>
@@ -60,7 +60,7 @@ export default function Contact() {
                 <span className={styles.icon}>📱</span>
                 <div>
                   <h4>Phone</h4>
-                  <a href="tel:+1234567890">+1 (234) 567-890</a>
+                  <a href="tel:+84931802917">+84 931 802 917</a>
                 </div>
               </div>
 
@@ -68,7 +68,7 @@ export default function Contact() {
                 <span className={styles.icon}>📍</span>
                 <div>
                   <h4>Location</h4>
-                  <p>City, Country</p>
+                  <p>Ho Chi Minh City, Vietnam</p>
                 </div>
               </div>
             </div>
