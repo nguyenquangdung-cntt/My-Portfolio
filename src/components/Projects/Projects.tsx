@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./Projects.module.scss";
 
 const projectsData = [
