@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dung Nguyen - Portfolio</title>
+        <title>Nguyen Dung - Portfolio</title>
         <meta name="description" content="Full Stack Developer Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
