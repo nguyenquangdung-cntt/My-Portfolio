@@ -1,0 +1,87 @@
+@import '@/styles/variables';
+
+.skills {
+  background: linear-gradient(135deg, $primary 0%, $secondary 100%);
+  padding: 4rem 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: $light;
+  position: relative;
+  padding-bottom: 1rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, $highlight 0%, #ff6b9d 100%);
+    border-radius: 2px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 2rem;
+  }
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skillGroup {
+  background: rgba(233, 69, 96, 0.05);
+  border: 1px solid rgba(233, 69, 96, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: all $transition-duration $transition-ease;
+
+  &:hover {
+    border-color: $highlight;
+    background: rgba(233, 69, 96, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(233, 69, 96, 0.2);
+  }
+}
+
+.categoryTitle {
+  font-size: 1.5rem;
+  color: $highlight;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skillTag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(233, 69, 96, 0.15);
+  color: $light;
+  border-radius: 0.375rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all $transition-duration $transition-ease;
+  border: 1px solid rgba(233, 69, 96, 0.3);
+
+  &:hover {
+    background: rgba(233, 69, 96, 0.3);
+    border-color: $highlight;
+    transform: scale(1.05);
+  }
+}

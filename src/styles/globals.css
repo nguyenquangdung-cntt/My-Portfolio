@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans antialiased text-gray-900;
+  background-color: #0f0f1e;
+  color: #f4f4f4;
+}
+
+a {
+  @apply transition-colors duration-300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif font-bold;
+}
+
+section {
+  @apply py-section;
+}

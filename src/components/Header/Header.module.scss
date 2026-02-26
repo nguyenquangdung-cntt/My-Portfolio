@@ -1,0 +1,99 @@
+@import '@/styles/variables';
+
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(15, 15, 30, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(233, 69, 96, 0.1);
+  z-index: 100;
+  box-shadow: $shadow-md;
+
+  :global(.container) {
+    max-width: 1200px;
+  }
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $highlight;
+  text-decoration: none;
+  transition: color $transition-duration $transition-ease;
+
+  &:hover {
+    color: lighten($highlight, 10%);
+  }
+}
+
+.navMenu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+
+  li {
+    a {
+      color: $light;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      padding-bottom: 0.5rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $highlight;
+        transition: width $transition-duration $transition-ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: $secondary;
+      padding: 1.5rem;
+      gap: 1rem;
+    }
+  }
+}
+
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.4rem;
+
+  span {
+    width: 25px;
+    height: 3px;
+    background: $highlight;
+    border-radius: 2px;
+    transition: all $transition-duration $transition-ease;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    display: flex;
+  }
+
+  &:hover span {
+    background: lighten($highlight, 15%);
+  }
+}

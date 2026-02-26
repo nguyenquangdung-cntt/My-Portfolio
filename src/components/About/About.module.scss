@@ -1,0 +1,101 @@
+@import '@/styles/variables';
+
+.about {
+  background: linear-gradient(135deg, $secondary 0%, $primary 100%);
+  padding: 4rem 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: $light;
+  position: relative;
+  padding-bottom: 1rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, $highlight 0%, #ff6b9d 100%);
+    border-radius: 2px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 2rem;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  align-items: start;
+
+  @media (max-width: $breakpoint-lg) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.text {
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #c0c0d0;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: $breakpoint-md) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat {
+  background: rgba(233, 69, 96, 0.05);
+  border: 1px solid rgba(233, 69, 96, 0.2);
+  padding: 2rem 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  transition: all $transition-duration $transition-ease;
+
+  &:hover {
+    border-color: $highlight;
+    background: rgba(233, 69, 96, 0.1);
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: $highlight;
+    margin-bottom: 0.5rem;
+
+    @media (max-width: $breakpoint-md) {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #9090a0;
+  }
+}
