@@ -1,7 +1,12 @@
 @import '@/styles/variables';
 
 .contact {
-  background: linear-gradient(135deg, $primary 0%, $secondary 100%);
+  background: linear-gradient(
+    135deg,
+    #eff6ff 0%,
+    rgba(219, 234, 254, 1) 50%,
+    rgba(191, 219, 254, 0.9) 100%
+  );
   padding: 4rem 0;
 }
 
@@ -9,7 +14,7 @@
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: $light;
+  color: $primary;
   position: relative;
   padding-bottom: 1rem;
 
@@ -21,7 +26,7 @@
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, $highlight 0%, #ff6b9d 100%);
+    background: linear-gradient(90deg, $highlight 0%, $accent 100%);
     border-radius: 2px;
   }
 
@@ -45,13 +50,13 @@
 .info {
   h3 {
     font-size: 1.8rem;
-    color: $light;
+    color: $primary;
     margin-bottom: 1rem;
   }
 
   p {
     font-size: 1.1rem;
-    color: #c0c0d0;
+    color: #475569;
     line-height: 1.8;
     margin-bottom: 2rem;
   }
@@ -67,14 +72,14 @@
   display: flex;
   gap: 1.5rem;
   padding: 1.5rem;
-  background: rgba(233, 69, 96, 0.05);
+  background: #ffffff;
   border-radius: 0.75rem;
-  border: 1px solid rgba(233, 69, 96, 0.2);
+  border: 1px solid rgba(148, 163, 184, 0.35);
   transition: all $transition-duration $transition-ease;
 
   &:hover {
     border-color: $highlight;
-    background: rgba(233, 69, 96, 0.1);
+    background: #f8fafc;
   }
 
   .icon {
@@ -90,8 +95,9 @@
     margin-bottom: 0.25rem;
   }
 
-  a, p {
-    color: #9090a0;
+  a,
+  p {
+    color: #64748b;
     font-size: 0.95rem;
     text-decoration: none;
     transition: color $transition-duration $transition-ease;
@@ -103,8 +109,8 @@
 }
 
 .form {
-  background: rgba(233, 69, 96, 0.05);
-  border: 1px solid rgba(233, 69, 96, 0.2);
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.35);
   padding: 2rem;
   border-radius: 1rem;
 }
@@ -115,7 +121,7 @@
   label {
     display: block;
     font-weight: 600;
-    color: $light;
+    color: $primary;
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
   }
@@ -124,23 +130,23 @@
   textarea {
     width: 100%;
     padding: 0.875rem;
-    background: rgba(15, 52, 96, 0.3);
-    border: 1px solid rgba(233, 69, 96, 0.2);
+    background: #eff6ff;
+    border: 1px solid rgba(148, 163, 184, 0.5);
     border-radius: 0.5rem;
-    color: $light;
+    color: $primary;
     font-size: 0.95rem;
     font-family: inherit;
     transition: all $transition-duration $transition-ease;
 
     &::placeholder {
-      color: #7070a0;
+      color: #94a3b8;
     }
 
     &:focus {
       outline: none;
       border-color: $highlight;
-      background: rgba(15, 52, 96, 0.5);
-      box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.1);
+      background: #ffffff;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
     }
   }
 
@@ -154,7 +160,7 @@
   width: 100%;
   padding: 1rem;
   background: $highlight;
-  color: white;
+  color: $light;
   border: none;
   border-radius: 0.5rem;
   font-weight: 600;
@@ -163,9 +169,9 @@
   transition: all $transition-duration $transition-ease;
 
   &:hover {
-    background: darken($highlight, 10%);
+    background: darken($highlight, 8%);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
   }
 
   &:active {
