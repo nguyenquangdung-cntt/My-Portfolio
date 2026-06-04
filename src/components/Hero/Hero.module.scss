@@ -5,12 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    135deg,
-    #0f172a 0%,
-    #1d4ed8 45%,
-    #60a5fa 100%
-  );
+  background-image: url('../../../public/images/bg.png');
   position: relative;
   overflow: hidden;
 
@@ -68,7 +63,7 @@
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: $light;
+  color: $dark-bg;
 
   @media (max-width: $breakpoint-lg) {
     font-size: 3rem;

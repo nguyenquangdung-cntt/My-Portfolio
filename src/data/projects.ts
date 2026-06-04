@@ -16,34 +16,34 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
-    slug: "e-commerce-platform",
-    title: "E-Commerce Platform",
+    slug: "e-book-platform",
+    title: "Ebook Library",
     description:
-      "A full-stack e-commerce platform with React frontend and Node.js backend",
+      "A full-stack e-book platform with React frontend and Node.js backend",
     image: "/projects/ecommerce.jpg",
-    tags: ["React", "Node.js", "MongoDB"],
-    link: "/projects/e-commerce-platform",
+    tags: ["NextJS", "Node.js", "NestJS", "MySQL", "Tailwind CSS", "ElectronJS"],
+    link: "/projects/e-book-platform",
     role: "Full Stack Developer",
     period: "2023",
     overview:
-      "A modern e-commerce experience with product browsing, cart management, secure checkout, and admin tools for managing inventory and orders.",
+      "A modern e-book experience with product browsing, cart management, secure checkout, and admin tools for managing inventory and orders.",
     features: [
       "Responsive product catalog with advanced filtering and search",
       "Persistent shopping cart and secure checkout flow",
       "Admin dashboard for managing products, orders, and users",
       "Integration with third-party payment gateway",
     ],
-    technologies: ["React", "Node.js", "Express", "MongoDB", "JWT", "SCSS"],
+    technologies: ["NextJS", "Node.js", "NestJS", "MySQL", "Tailwind CSS", "ElectronJS"],
   },
   {
     id: 2,
-    slug: "task-management-app",
-    title: "Task Management App",
+    slug: "tour-booking-management",
+    title: "Tour Booking Management",
     description:
-      "A collaborative task management application with real-time updates",
-    image: "/projects/taskapp.jpg",
+      "A collaborative tour booking management application with real-time updates",
+    image: "/projects/tourbooking.jpg",
     tags: ["Next.js", "Firebase", "Tailwind CSS"],
-    link: "/projects/task-management-app",
+    link: "/projects/tour-booking-management",
     role: "Frontend Developer",
     period: "2023",
     overview:
@@ -58,13 +58,13 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    slug: "portfolio-website",
-    title: "Portfolio Website",
+    slug: "paylink-manager",
+    title: "PayLink Manager",
     description:
       "A modern portfolio website showcasing design and development skills",
     image: "/projects/portfolio.jpg",
     tags: ["Next.js", "TypeScript", "SCSS"],
-    link: "/projects/portfolio-website",
+    link: "/projects/paylink-manager",
     role: "Frontend Developer",
     period: "2024",
     overview:
@@ -79,13 +79,55 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    slug: "data-dashboard",
-    title: "Data Dashboard",
+    slug: "xedap-vn",
+    title: "xedap.vn",
     description:
       "An analytics dashboard with interactive charts and real-time data",
     image: "/projects/dashboard.jpg",
     tags: ["React", "Chart.js", "API"],
-    link: "/projects/data-dashboard",
+    link: "/projects/xedap-vn",
+    role: "Frontend Engineer",
+    period: "2024",
+    overview:
+      "An analytics dashboard that visualizes key business metrics through interactive charts and tables.",
+    features: [
+      "Multiple dashboards with customizable widgets",
+      "Interactive charts with filtering and drill-down capabilities",
+      "Real-time metric updates from external APIs",
+      "Dark theme optimized for long analytic sessions",
+    ],
+    technologies: ["React", "Chart.js", "REST APIs", "SCSS"],
+  },
+  {
+    id: 5,
+    slug: "xedaptot-com",
+    title: "xedaptot.com",
+    description:
+      "An analytics dashboard with interactive charts and real-time data",
+    image: "/projects/dashboard.jpg",
+    tags: ["React", "Chart.js", "API"],
+    link: "/projects/xedaptot-com",
+    role: "Frontend Engineer",
+    period: "2024",
+    overview:
+      "An analytics dashboard that visualizes key business metrics through interactive charts and tables.",
+    features: [
+      "Multiple dashboards with customizable widgets",
+      "Interactive charts with filtering and drill-down capabilities",
+      "Real-time metric updates from external APIs",
+      "Dark theme optimized for long analytic sessions",
+    ],
+    technologies: ["React", "Chart.js", "REST APIs", "SCSS"],
+  },
+  {
+    id: 6,
+    slug: "covid-health-dashboard",
+    title: "REAL-TIME HEALTH INDICATORS MONITORING SOLUTION FOR COVID-19 PATIENTS",
+    description:
+      "An analytics dashboard with interactive charts and real-time data",
+    image: "/projects/dashboard.jpg",
+    tags: ["React", "Chart.js", "API"],
+    link: "/projects/covid-health-dashboard",
     role: "Frontend Engineer",
     period: "2024",
     overview:

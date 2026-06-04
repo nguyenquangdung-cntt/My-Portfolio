@@ -7,9 +7,9 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <nav className="container flex items-center justify-between px-4 py-4 mx-auto">
         <Link href="/" className={styles.logo}>
-          Portfolio
+          NGUYEN QUANG DUNG
         </Link>
 
         <button

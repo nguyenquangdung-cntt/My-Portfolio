@@ -9,34 +9,29 @@ export default function About() {
         <div className={styles.content}>
           <div className={styles.text}>
             <p>
-              I'm a creative developer with over 5 years of experience building
-              web applications. My passion is creating intuitive user interfaces
-              and robust backend systems that make a real impact.
-            </p>
-            <p>
-              I specialize in React, Next.js, TypeScript, and modern web
-              technologies. I love working with teams to solve complex problems
-              and deliver exceptional digital experiences.
-            </p>
-            <p>
-              When I'm not coding, you can find me exploring new design trends,
-              contributing to open-source projects, or sharing knowledge with
-              the developer community.
+              Frontend Engineer with 2+ years of experience building scalable
+              web applications using ReactJS and NextJS. Experienced in
+              architecting production systems including payment platforms,
+              booking management systems, and subscription-based digital
+              products. Strong in advanced state management (React Query, Redux
+              Toolkit), performance optimization, custom hook abstraction, and
+              scalable frontend architecture. Focused on building maintainable,
+              performance-conscious React applications.
             </p>
           </div>
 
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <h3>10+</h3>
+              <h3>5+</h3>
               <p>Projects Completed</p>
             </div>
             <div className={styles.stat}>
-              <h3>5+</h3>
+              <h3>2+</h3>
               <p>Years Experience</p>
             </div>
             <div className={styles.stat}>
-              <h3>20+</h3>
-              <p>Happy Clients</p>
+              <h3>8+</h3>
+              <p>Clients</p>
             </div>
             <div className={styles.stat}>
               <h3>100%</h3>

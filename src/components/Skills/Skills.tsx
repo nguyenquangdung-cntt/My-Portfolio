@@ -19,23 +19,22 @@ const skillsData = [
     skills: [
       "Node.js",
       "Express",
-      "Python",
+      "NestJS",
       "PostgreSQL",
       "MongoDB",
       "REST APIs",
-      "GraphQL",
     ],
   },
   {
     category: "Tools & Others",
-    skills: ["Git", "Docker", "VS Code", "Figma", "Linux", "Webpack", "Jest"],
+    skills: ["Git", "Docker", "VS Code", "Figma", "Linux", "Webpack"],
   },
 ];
 
 export default function Skills() {
   return (
     <section id="skills" className={styles.skills}>
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         <h2 className={styles.title}>Skills</h2>
 
         <div className={styles.skillsGrid}>
