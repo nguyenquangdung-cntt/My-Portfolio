@@ -8,8 +8,8 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <nav className="container flex items-center justify-between px-4 py-4 mx-auto">
-        <Link href="/" className="flex items-center gap-2">
+      <nav className="container flex items-center justify-between px-4 py-2 mx-auto">
+        <Link href="/" className="flex items-center gap-1">
           <img src={logo.src} alt="Logo" className="w-14 h-14" />
               <h1 className="text-xl font-bold text-white">NGUYEN QUANG DUNG</h1>
         </Link>

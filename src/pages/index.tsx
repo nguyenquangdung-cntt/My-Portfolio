@@ -14,6 +14,7 @@ export default function Home() {
         <title>Nguyen Dung - Portfolio</title>
         <meta name="description" content="Full Stack Developer Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="favicon" href="/public/favicon.ico" />
       </Head>
 
       <Header />
