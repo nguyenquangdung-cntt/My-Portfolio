@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <div className="container mx-auto px-4">
+      <div className="container px-4 mx-auto">
         <div className={styles.content}>
           <div className={styles.section}>
             <h3>Portfolio</h3>
@@ -55,8 +55,7 @@ export default function Footer() {
         <div className={styles.divider}></div>
 
         <div className={styles.bottom}>
-          <p>&copy; {currentYear} Your Name. All rights reserved.</p>
-          <p>Built with Next.js, Tailwind CSS, and SCSS.</p>
+          <p>&copy; {currentYear} Nguyen Quang Dung. All rights reserved.</p>
         </div>
       </div>
     </footer>
